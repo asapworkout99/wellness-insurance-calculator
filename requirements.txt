@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+plotly
+scikit-learn
+catboost
+lightgbm
+torch
+pytorch-tabnet
+psycopg2-binary
+sqlalchemy
+python-dotenv

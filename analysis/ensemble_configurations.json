@@ -1,0 +1,40 @@
+{
+  "simple_average": {
+    "method": "Simple average of all models",
+    "oof_rmse": 6503.094909391013,
+    "weights": "equal"
+  },
+  "weighted_rmse": {
+    "method": "Weighted by inverse RMSE",
+    "oof_rmse": 6503.079753076599,
+    "weights": {
+      "LightGBM": 0.3336112903111564,
+      "CatBoost": 0.3339216701409972,
+      "TabNet": 0.3324670395478464
+    }
+  },
+  "rank_average": {
+    "method": "Average of prediction ranks",
+    "oof_rmse": 6503.079753076599,
+    "weights": "equal ranks"
+  },
+  "stacking_ridge": {
+    "method": "Stacking with Ridge meta-learner",
+    "holdout_rmse": 6504.231102783009,
+    "meta_learner_coefs": {
+      "LightGBM": -0.030393447365759017,
+      "CatBoost": 1.0039249159501902,
+      "TabNet": 0.024872599471758124
+    },
+    "meta_learner_intercept": -24.859681130263198
+  },
+  "optimized_weights": {
+    "method": "Scipy optimize on OOF predictions",
+    "oof_rmse": 6500.561208673653,
+    "weights": {
+      "LightGBM": 0.16323830023507996,
+      "CatBoost": 0.6772916226189527,
+      "TabNet": 0.1594700771459674
+    }
+  }
+}

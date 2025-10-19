@@ -1,0 +1,15 @@
+{
+  "iterations": 1500,
+  "depth": 7,
+  "learning_rate": 0.02,
+  "l2_leaf_reg": 7.0,
+  "bagging_temperature": 0.05,
+  "random_strength": 0.8,
+  "border_count": 210,
+  "grow_policy": "Lossguide",
+  "bootstrap_type": "Bayesian",
+  "random_seed": 42,
+  "verbose": 0,
+  "task_type": "CPU",
+  "thread_count": -1
+}
